@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ФТН претраживач</string>
+    <string name="app_title">&#160;ФТН претраживач</string>
+    <string name="action_settings">Подешавања</string>
+    <string name="action_about">О програму</string>
+    <string name="settings">Подешавања</string>
+    <string name="showing_result">Резултати</string>
+    <string name="next_page">&gt;</string>
+    <string name="prev_page">&lt;</string>
+    <string name="first_page">&#171;</string>
+    <string name="last_page">&#187;</string>
+    <string name="page_number">Страница #0 од #1</string>
+    <string name="search_in_progress">Претрага је у току…</string>
+    <string name="no_search_results">Нема резултата за дати појам.</string>
+    <string name="error_during_search">Грешка приликом претраге. Проверите интернет конекцију и подешавање апликације.</string>
+    <string name="settings_updated">Подешавања су ажуриране.</string>
+    <string name="about_title">О програму…</string>
+    <string name="about_message">Апликација је део Мастер тезе.</string>
+    <string name="settings_service_url">Адреса сервиса за претрагу</string>
+    <string name="settings_service_path">Путања до сервиса за претрагу</string>
+    <string name="settings_results_per_page">Број рњзултата по страници</string>
+    <string name="settings_open_results_in_title">Отвори резултат у подразумеваном претраживачу</string>
+    <string name="settings_open_results_in_summary">Резултате је могуће отвориту у подразумеваном претраживачу или у угњежденом претраживачу</string>
+</resources>

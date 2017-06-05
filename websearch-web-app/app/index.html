@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>
+<html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Websearch web client</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <link rel="icon"
+          type="image/icon"
+          href="favicon.ico" />
+</head>
+<body>
+<ul class="nav navbar-top-links navbar-right hidden-xs">
+    <li>
+        <a   >
+            <i class="fa fa-github fa-lg"></i>&nbsp; Login as Admin
+        </a>
+    </li> 
+</ul>
+    <div class="container">
+        <div class="row">
+            <div class="center-block">
+                <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+                <div class="panel-body">
+                    <a href="#" class="pull-left"><img class="img-circle" src="https://yt3.ggpht.com/-hTI97fnUovc/AAAAAAAAAAI/AAAAAAAAAAA/rKo8978ZJhc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"></a>
+                    <h1 class="text-center">FTN scholar</h1>
+                </div>
+            </div>
+         </div>
+    </div>
+    <div ng-view></div>
+
+	<script src="bower_components/jquery/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/ngstorage/ngStorage.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/notifyjs/dist/notify.js"></script> 
+	<script src="bower_components/moment/moment.js"></script>
+	<script src="bower_components/require/require.js"></script> 
+    <script src="app.js"></script>
+    <script src="searchview/searchview.js"></script>
+    <script src="configview/configview.js"></script>
+    <script src="components/version/version.js"></script>
+    <script src="components/version/version-directive.js"></script>
+    <script src="components/version/interpolate-filter.js"></script>
+</body>
+</html>

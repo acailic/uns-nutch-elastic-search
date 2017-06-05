@@ -1,0 +1,19 @@
+{
+  "name": "CrawledWebPage",
+  "type": "record",
+  "namespace": "org.apache.nutch.indexer.history",
+  "doc": "WebPage is the primary data structure in Nutch representing crawl data for a given WebPage at some point in time",
+  "fields": [
+    {
+      "name": "WebPageData",
+      "type": [
+        "null",
+        {
+          "type": "array",
+          "items": "org.apache.nutch.storage.WebPage"
+        }
+      ],
+      "default": null
+    }
+  ]
+}

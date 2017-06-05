@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ftn.e2.udd.websearch.android.settings.SummaryUpdatingEditTextPreference
+        android:key="searchServiceUrl"
+        android:title="@string/settings_service_url"
+        />
+
+    <ftn.e2.udd.websearch.android.settings.SummaryUpdatingEditTextPreference
+        android:key="searchServicePath"
+        android:title="@string/settings_service_path"
+        />
+
+    <ftn.e2.udd.websearch.android.settings.SummaryUpdatingEditTextPreference
+        android:key="resultsPerPage"
+        android:title="@string/settings_results_per_page"
+        />
+
+    <CheckBoxPreference
+        android:title="@string/settings_open_results_in_title"
+        android:summary="@string/settings_open_results_in_summary"
+        android:key="openResultInDefaultBrowser" />
+</PreferenceScreen>

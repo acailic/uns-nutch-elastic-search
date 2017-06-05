@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+
+<property>
+ <name>http.agent.name</name>
+ <value>FTN Nutch Crawler</value>
+</property>
+
+<property>
+  <name>storage.data.store.class</name>
+    <value>org.apache.gora.mongodb.store.MongoStore</value>
+    <description>Default class for storing data</description>
+  </property>
+
+  <property>
+    <name>plugin.folders</name>
+    <value>build/plugins</value>
+  </property>
+ 
+  <property>
+    <name>plugin.includes</name>
+    <value>protocol-(http|httpclient)|urlfilter-regex|index-(basic|more)|query-(basic|site|url|lang)|indexer-elastic|nutch-extensionpoints|parse-(text|html|msexcel|msword|mspowerpoint|pdf)|summary-basic|scoring-opic|urlnormalizer-(pass|regex|basic)|parse-(html|tika|metatags)|index-(basic|anchor|more|metadata|raw|history)</value>
+  </property>
+ 
+  <property>
+    <name>elastic.host</name>
+    <value>localhost</value>
+  </property>
+
+  <property>
+    <name>http.content.limit</name>
+    <value>6553600</value>
+  </property> 
+ 
+  <property>
+    <name>db.fetch.interval.default</name>
+    <value>600</value>
+    <!--value>86400</value-->    
+    <description>The number of seconds between re-fetches.
+    </description>
+  </property>
+
+  <property>
+    <name>fetcher.threads.fetch</name>
+    <value>100</value>
+    <description>The number of FetcherThreads the fetcher should use.
+    This is also determines the maximum number of requests that are
+    made at once (each FetcherThread handles one connection). The total
+    number of threads running in distributed mode will be the number of
+    fetcher threads * number of nodes as fetcher has one map task per node.
+    </description>
+  </property>
+
+  <property>
+    <name>fetcher.threads.per.queue</name>
+    <value>10</value>
+    <description>This number is the maximum number of threads that
+      should be allowed to access a queue at one time. Setting it to
+      a value > 1 will cause the Crawl-Delay value from robots.txt to
+      be ignored and the value of fetcher.server.min.delay to be used
+      as a delay between successive requests to the same server instead
+      of fetcher.server.delay.
+     </description>
+  </property>
+
+  <property>
+    <name>generate.max.count</name>
+    <value>5</value>
+    <description>The maximum number of urls in a single
+    fetchlist.  -1 if unlimited. The urls are counted according
+    to the value of the parameter generator.count.mode.
+    </description>
+  </property>
+  
+  <!-- ELASTIC -->
+  <property>
+    <name>elastic.cluster</name>
+    <!--value>elasticsearch_yairshefi</value-->
+    <value>elasticsearch</value>
+  </property>
+  <property>
+    <name>elastic.index</name>
+    <value>nutch</value>
+  </property>
+  <property>
+    <name>parser.character.encoding.default</name>
+    <value>utf-8</value>
+  </property>
+  <!-- END ELASTIC -->
+ 
+  <!-- HISTORY INDEXER -->
+  <property>
+    <name>history.rabbitmq.host</name>
+    <value>localhost</value>
+    <!--value>172.31.14.250</value-->
+  </property>
+  <property>
+    <name>history.rabbitmq.user</name>
+    <value>guest</value>
+    <!--value>noam</value-->
+  </property>
+  <property>
+    <name>history.rabbitmq.password</name>
+    <value>guest</value>
+    <!--value>banderas</value-->
+  </property>
+  <property>
+    <name>history.rabbitmq.queue.names</name>
+    <value>nlp</value>
+  </property>
+  <property>
+    <name>history.skip.unmodified</name>
+    <value>false</value>
+  </property>  
+  <!-- END HISTORY INDEXER -->
+
+  <property>
+    <name>continous.urls.dir</name>
+    <value>urls</value>
+  </property>
+</configuration>

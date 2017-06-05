@@ -1,0 +1,16 @@
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\entity\Page.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\api\impl\JacksonJsonProvider.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\entity\Domain.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\filter\CyrillicToLatinFilterFactory.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\util\HibernateSearchHelper.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\crawler\UnsCrawler.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\api\impl\SearchServiceImpl.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\util\WebSearchUtils.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\repository\PageRepository.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\crawler\UnsCrawlerController.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\exception\resolver\ExceptionResolver.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\repository\DomainRepository.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\util\CyrillicToLatinConverter.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\exception\mapper\GenericExceptionMapper.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\util\ApplicationContextProvider.java
+D:\Fakultet\MASTER\Master_tema\uns-search-master\websearch-server\services\src\main\java\ftn\e2\udd\websearch\filter\CyrillicToLatinFilter.java

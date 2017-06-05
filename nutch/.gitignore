@@ -1,0 +1,15 @@
+conf/*.txt
+conf/hadoop-env.sh
+conf/slaves
+build/
+runtime/
+logs/
+hadoop.log*
+target/
+
+# Eclipse files
+.classpath
+.project
+.settings/
+.idea/
+nutch-patch.iml

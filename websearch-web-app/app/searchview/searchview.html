@@ -1,0 +1,71 @@
+<div id="top" class="container">
+    <div class="row spacer">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for..." ng-model="searchTerm" ng-keyup="$event.keyCode === 13 ? getSearchResults(searchTerm, 0) : null" >
+                <span class="input-group-btn">
+                    <button title="Search" class="btn btn-primary" type="button" ng-click="getSearchResults(searchTerm, 0)"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    <button title="Reset search" class="btn btn-default" type="button" ng-click="resetSearch()"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span></button>
+                    <button title="Configure" class="btn btn-default" ng-controller="MainCtrl" type="button" ng-click="go('config')"><span class="glyphicon glyphicon-cog" aria-hidden="true"></span></button>
+                    <button title="About" type="button" class="btn btn-default" data-toggle="modal" data-target="#aboutModal"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></button>
+                </span>
+        </div>
+    </div>
+
+    <div class="row spacer">
+        <div ng-if="totalNumberOfResults === 0"><span class="label label-danger">No results found.</span></div>
+        <div ng-if="searchResults.length">
+            <div class="label label-success">About {{totalNumberOfResults | number}} result<span ng-if="searchResults.length > 1">s</span> found. Showing page {{currentPage + 1}} of {{numberOfPages}}.</div>
+            <div class="media" ng-repeat="searchResult in searchResults">
+                    <div class="media-body">
+                        <a href="{{searchResult.link}}" target="_blank" class="media-left"><h4 class="media-heading">{{searchResult.title}}<span ng-if="!searchResult.title">Untitled</span></h4></a>
+                        <span class="green">{{searchResult.link}}</span>
+                        <h6><span ng-bind-html="searchResult.description" class="text-justify"></span></h6>
+                    </div>
+            </div>
+            <nav>
+                <ul class="pagination">
+                    <li ng-class="currentPage === 0 ? 'disabled' : ''">
+                        <a href="" ng-click="getSearchResults(searchTerm, 0)" aria-label="First" title="First page">
+                            <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li ng-class="currentPage === 0 ? 'disabled' : ''">
+                        <a href="" ng-click="prevPage()" aria-label="Previous" title="Previous page">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li ng-repeat="i in pages" ng-class="i === currentPage ? 'active' : ''"><a href="" ng-click="getSearchResults(searchTerm, i)" title="Page {{i + 1}}">{{i + 1}}</a></li>
+                    <li ng-class="currentPage === (numberOfPages - 1) ? 'disabled' : ''">
+                        <a href="" ng-click="nextPage()" aria-label="Next" title="Next page">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                    <li ng-class="currentPage === (numberOfPages - 1) ? 'disabled' : ''">
+                        <a href="" ng-click="getSearchResults(searchTerm, numberOfPages - 1)" aria-label="Last" title="Last page">
+                            <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<!-- About Modal -->
+<div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="aboutModalLabel">About</h4>
+            </div>
+            <div class="modal-body">
+                Proof of concept AngularJS application made as a part of MSc thesis.<br><br>
+                Version: <span app-version></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FTN search</string>
+    <string name="app_title">&#160;FTN search app</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_about">About</string>
+    <string name="settings">Settings</string>
+    <string name="showing_result">Result</string>
+    <string name="next_page">&gt;</string>
+    <string name="prev_page">&lt;</string>
+    <string name="first_page">&#171;</string>
+    <string name="last_page">&#187;</string>
+    <string name="page_number">Page #0 of #1</string>
+    <string name="search_in_progress">Searching in progress…</string>
+    <string name="no_search_results">No results found.</string>
+    <string name="error_during_search">Error occurred during search. Check the internet connection and/or the app settings.</string>
+    <string name="settings_updated">Settings updated.</string>
+    <string name="about_title">About…</string>
+    <string name="about_message">Proof of concept application made as a part of MSc thesis.</string>
+    <string name="settings_service_url">Search service url</string>
+    <string name="settings_service_path">Search service path</string>
+    <string name="settings_results_per_page">Results per page</string>
+    <string name="settings_open_results_in_title">Open results in default browser</string>
+    <string name="settings_open_results_in_summary">Choose whether to open the result in default browser or in embedded window</string>
+</resources>

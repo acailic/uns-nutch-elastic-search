@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FTN kereső</string>
+    <string name="app_title">&#160;FTN kereső</string>
+    <string name="action_settings">Beállitások</string>
+    <string name="action_about">A programról</string>
+    <string name="settings">Beállitások</string>
+    <string name="showing_result">Eredmény</string>
+    <string name="next_page">&gt;</string>
+    <string name="prev_page">&lt;</string>
+    <string name="first_page">&#171;</string>
+    <string name="last_page">&#187;</string>
+    <string name="page_number">#0. oldal a(z) #1-ból/ből</string>
+    <string name="search_in_progress">Keresés folyamatban …</string>
+    <string name="no_search_results">Nincs találat</string>
+    <string name="error_during_search">Hiba a keresés folyamatában. Ellenőrizze az internet csatlakozást illetve a beállitásokat.</string>
+    <string name="settings_updated">Beállitások mentve.</string>
+    <string name="about_title">Az alkalmazásról…</string>
+    <string name="about_message">Az alkalmazás része a mester munkának.</string>
+    <string name="settings_service_url">Kereső szolgáltatás URL</string>
+    <string name="settings_service_path">Útvonal a kereső szolgáltatásig</string>
+    <string name="settings_results_per_page">Oldalankénti találatok</string>
+    <string name="settings_open_results_in_title">Megnytitás az alapértelmezett böngészőben</string>
+    <string name="settings_open_results_in_summary">A találat megnyitható a készülék alapértelmezett böngészőjében illetve az alkamazáson belüli böngészőben</string>
+</resources>
