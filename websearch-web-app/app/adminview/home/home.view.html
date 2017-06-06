@@ -1,0 +1,54 @@
+<ul class="nav navbar-top-links navbar-right hidden-xs">
+    <li>
+       Hi {{vm.user.firstName}}  
+        
+    </li>  
+</ul>
+<div class="container">
+        <div class="row">
+            <div class="center-block">
+                <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <![endif]-->
+                <div class="panel-body">
+                    <a href="#" class="pull-left"><img class="img-circle" src="https://yt3.ggpht.com/-hTI97fnUovc/AAAAAAAAAAI/AAAAAAAAAAA/rKo8978ZJhc/s100-c-k-no-mo-rj-c0xffffff/photo.jpg"></a>
+                    <h1 class="text-center">FTN scholar</h1>
+                </div>
+            </div> 
+         </div>
+</div>
+
+<h2> Admin panel to add crawler urls</h2>
+<form name="myForm">
+<label for="singleSelect"> Set at which crawl stage to start the first cycle: </label><br>
+    <select name="singleSelect" ng-model="data.phases">
+      <option value="option-1">InjectorJob</option>
+      <option value="option-2">GeneratorJob</option>
+      <option value="option-1">FetcherJob</option>
+      <option value="option-2">ParserJob</option>
+      <option value="option-2">DbUpdaterJob</option>
+      <option value="option-2">IndexingJob</option>
+    </select><br>
+    <hr>
+    
+    <label   > Set number of crawl cycles per run: </label><br>
+    <input type="text" name="input" 
+     ng-model="ccjob.cycles" > <hr>
+    <label > Number of top links: </label><br>
+     <input type="text" name="input" 
+     ng-model="ccjob.topn" > <hr>
+    
+    <label > Inject: </label><br>
+     <select name="singleSelect" ng-model="data.inject">
+      <option value="option-1">true</option>
+      <option value="option-2">false</option>
+    </select> <hr>
+    
+     <label > Seed url: </label><br>
+      <input type="text" name="input" 
+     ng-model="ccjob.seedUrl" > <hr>
+    
+    </form >
+<p><a href="#!/login" class="btn btn-primary">Submit</a></p>
+ <hr>
+ <a href="#!/login" class="btn btn-danger">Logout</a>  
