@@ -9,7 +9,7 @@ angular.module('myApp.rabbit', ['amqp', 'ng-table', 'ui.bootstrap'])
                 password: 'guest'
             },
             exchange: 'amq.topic',
-            queue: 'nlp/messages', 
+            queue: 'nlp/messages'
         };
         $scope.rowCollection = [
             {message: "example", source: "crawler", url: "http://www.ftn.uns.ac.rs", fetch_time: "2017-07-05"}
