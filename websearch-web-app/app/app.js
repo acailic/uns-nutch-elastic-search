@@ -3,11 +3,13 @@
 // Declare app level module which depends on views, and components
 angular.module('myApp', [
     'ngRoute',
-    'ngStorage', 
+    'ngStorage',
     'myApp.searchview',
     'myApp.configview',
-    'myApp.version', 
-    'ngSanitize' 
+    'myApp.version',
+    'myApp.adminview',
+    'myApp.rabbit',
+    'ngSanitize'
     ])
     .config(['$routeProvider', function ($routeProvider) {
         $routeProvider.otherwise({redirectTo: '/search'});
