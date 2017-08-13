@@ -3,25 +3,21 @@
 <head>
  <meta charset="utf-8" />
  <title>AngularJS RabbitMQ Consumer</title>
- <script>
-   document.write('<base href="' + document.location + '" />');
- </script>
+
  <link rel="stylesheet" href="style.css" />
  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" />
 
  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.2/angular.js"></script>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ng-table/1.0.0/ng-table.css">
  <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-table/1.0.0/ng-table.js"></script>
-   <script src="lib/kaazing-amqp-0-9-1-client-javascript/javascript/WebSocket-debug.js"></script>
-   <script src="lib/kaazing-amqp-0-9-1-client-javascript/javascript/Amqp-0-9-1-debug.js"></script>
+   <script src="lib/WebSocket.js"></script>
+   <script src="lib/Amqp-0-9-1.js"></script>
  <script src="rabbitmq.js"></script>
 </head>
 
 <body ng-controller="tableCtrl">
  <p>Hello {{name}}.</p>
-
  <p>=================================================================================</p>
-
        <p><strong>Page:</strong> {{tableParams.page()}}</p>
        <p><strong>Count per page:</strong> {{tableParams.count()}}</p>
  <table ng-table="tableParams" class="table table-condensed table-bordered table-striped">
