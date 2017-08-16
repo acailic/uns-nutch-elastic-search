@@ -9,6 +9,7 @@ angular.module('myApp', [
     'myApp.version',
     'myApp.adminview',
     'myApp.rabbit',
+    'myapp.Auth',
     'ngSanitize'
     ])
     .config(['$routeProvider', function ($routeProvider) {
