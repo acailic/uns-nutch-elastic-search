@@ -1,8 +1,7 @@
-(function () {
-    'use strict';
+'use strict';
 
     angular
-        .module('App.Common')
+        .module('myapp.Common')
         .factory('FlashMessage', FlashMessage);
 
     FlashMessage.$inject = ['$rootScope'];
@@ -49,6 +48,4 @@
                 keepAfterLocationChange: keepAfterLocationChange
             };
         }
-    }
-
-})();
+    }();

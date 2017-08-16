@@ -1,5 +1,5 @@
 'use strict';
-angular.module('App.Auth')
+angular.module('myapp.Auth')
     .service('AuthService', ['Base64', '$http', '$cookieStore', '$rootScope', '$timeout', 'BackendCfg',
         function (Base64, $http, $cookieStore, $rootScope, $timeout, BackendCfg) {
             var service = this;
