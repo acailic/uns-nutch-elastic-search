@@ -110,7 +110,7 @@
   </property>
   <property>
     <name>history.rabbitmq.queue.names</name>
-    <value>nlp</value>
+    <value>ftn</value>
   </property>
   <property>
     <name>history.skip.unmodified</name>

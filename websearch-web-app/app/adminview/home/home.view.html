@@ -18,7 +18,7 @@
 <h2> Admin panel to add crawler urls</h2>
 <form name="myForm">
 <label for="singleSelect"> Set at which crawl stage to start the first cycle: </label><br>
-    <select name="singleSelect" ng-model="data.phases">
+    <select name="singleSelect" ng-model="ccjob.stage">
       <option value="1">InjectorJob</option>
       <option value="2">GeneratorJob</option>
       <option value="3">FetcherJob</option>
@@ -36,7 +36,7 @@
      ng-model="ccjob.topn" > <hr>
     
     <label > Inject: </label><br>
-     <select name="singleSelect" ng-model="data.inject">
+     <select name="singleSelect" ng-model="ccjob.inject">
       <option value="true">true</option>
       <option value="false">false</option>
     </select> <hr>

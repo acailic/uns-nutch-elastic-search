@@ -74,7 +74,7 @@ public class ElasticSearchClient {
 		BulkResponse response = bulkRequest.execute().get();
 		return response.hasFailures();
 	}
-	public SearchResponse search(String indexType, String fields,String ...indexName) {
+/* 	public SearchResponse search(String indexType, String fields,String ...indexName) {
 		boolean indexExists = client.admin().indices().prepareExists(indexName).execute().actionGet().isExists();
 
 		SearchResponse allHits = client.prepareSearch(indexName)
@@ -85,7 +85,7 @@ public class ElasticSearchClient {
 						AggregationBuilders.terms("dt_timeaggs").field("pilot_name"))
 				.execute().actionGet();
 		return allHits;
-	}
+	} */
 
 	public void close() {
 		client.close();		

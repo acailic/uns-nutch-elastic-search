@@ -25,7 +25,8 @@ angular.module('myApp', [
                 servicePath: "/search",
                 resultsPerPage: 10,
                 searchType: "FUZZY",
-                searchParams: []
+                searchParams: [] , 
+				nutchPath: "/crawler"
             }
         );
 
